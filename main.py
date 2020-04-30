@@ -19,6 +19,23 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 app.layout = html.Div([
+    html.Div(
+        id='intro',
+        children=html.Div([
+            "This is an Image Classification Prediction Model. "
+            "Please upload an image to receive a prediction."
+        ]),
+        style={
+            'width': '50%',
+            'height': '60px',
+            'lineHeight': '60px',
+            'borderWidth': '1px',
+            'borderStyle': 'dashed',
+            'borderRadius': '5px',
+            'textAlign': 'center',
+            'margin': '10px'
+        }
+    ),
     dcc.Upload(
         id='upload-data',
         children=html.Div([
