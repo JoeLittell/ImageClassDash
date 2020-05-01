@@ -10,7 +10,7 @@ to conduct a single image classification. The application itself uses **Google's
 and *scale* the project to accept up to *1000 requests per second.* A test was conducted using **Locus** to ensure 
 its elasticity.
 
-The application is located here: **Place Holder**
+The application is located here: **http://35.225.174.151:8888/**
 
 The user is expected to upload a single image of file format .png, .tif, or .jpg. The MobleNet image classification model
 will resize the image and give it's predicted classification along with it's confidence in that prediction. 
